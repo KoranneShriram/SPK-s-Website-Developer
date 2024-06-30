@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web IDE</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/theme/dracula.min.css">
+</head>
+<body>
+    <div class="container">
+        <div class="editor-pane">
+            <div class="editor" id="html-editor">
+                <h3>HTML</h3>
+                <textarea id="html-code"></textarea>
+            </div>
+            <div class="editor" id="css-editor">
+                <h3>CSS</h3>
+                <textarea id="css-code"></textarea>
+            </div>
+            <div class="editor" id="js-editor">
+                <h3>JavaScript</h3>
+                <textarea id="js-code"></textarea>
+            </div>
+        </div>
+        <div class="preview-pane">
+            <iframe id="output" sandbox="allow-scripts"></iframe>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/codemirror.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/javascript/javascript.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/css/css.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.65.2/mode/xml/xml.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
